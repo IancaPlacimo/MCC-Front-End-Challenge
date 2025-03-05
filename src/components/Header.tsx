@@ -9,9 +9,9 @@ const Header = () => {
     <header className="Header">
         <img  className="Header__logo" src={logo} alt="" />
       <nav  className="Header__list">
-        <Link to="/">Listagem</Link>
+        <Link to="/listagem">Listagem</Link>
         <Link to="/cadastro">Cadastro</Link>
-        <Link to="/login">Login</Link>
+        <Link to="/">Login</Link>
       </nav>
     </header>
   );

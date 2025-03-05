@@ -16,7 +16,7 @@ const Listagem = () => {
 
   return (
     <div className="listagem-usuarios">
-      <h2>Usuários retornados da API randomuser.me</h2>
+      <h2 >Usuários retornados da API randomuser.me</h2>
       <div className="usuarios">
         {usuarios.map((usuario, index) => (
           <UserCard key={index} user={usuario} />

@@ -8,7 +8,7 @@ import "./App.css";
 
 const AppContent = () => {
   const location = useLocation();
-  const isLoginPage = location.pathname === "/login";
+  const isLoginPage = location.pathname === "/";
 
   return (
     <div className="app">
@@ -17,9 +17,9 @@ const AppContent = () => {
 
       <main>
         <Routes>
-          <Route path="/" element={<Listagem />} />
+          <Route path="/listagem" element={<Listagem />} />
           <Route path="/cadastro" element={<Cadastro />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
         </Routes>
       </main>
 
