@@ -1,0 +1,64 @@
+/* Reset CSS */
+
+/* Remover margens e preenchimento padrão */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definir a fonte padrão para todos os elementos */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Remover o estilo de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remover estilo de lista */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remover bordas de tabelas */
+table {
+  border-collapse: collapse;
+}
+
+/* Definir o estilo para botões */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Definir o estilo para inputs e selects */
+input,
+select,
+textarea {
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Foco nos inputs */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4d90fe;
+}
+
+/* Evitar que imagens saiam da borda */
+img {
+  max-width: 100%;
+  height: auto;
+}
