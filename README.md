@@ -1,54 +1,36 @@
-# React + TypeScript + Vite
+# MCC Front-End Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o projeto para o desafio técnico de Front-End da MCC. O projeto foi desenvolvido utilizando React.js, Vite, TypeScript e SCSS. A aplicação consome a API pública **Random User Generator API** para exibir dados de pessoas aleatórias.
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Antes de rodar o projeto, você precisará ter instalado em sua máquina:
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (versão recomendada: v16 ou superior)
+- [Git](https://git-scm.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Como baixar o projeto
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone o repositório para a sua máquina local utilizando o Git:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+   
+    git clone https://github.com/IancaPlacimo/MCC-Front-End-Challenge.git
+ 
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. Navegue até o diretório do projeto:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+   
+    cd MCC-Front-End-Challenge
+ 
+
+## Como instalar as dependências
+
+Após clonar o repositório, instale as dependências do projeto com o seguinte comando:
+
+
+npm install
+
+
+Para rodar o projeto em modo de desenvolvimento, execute o comando:
+
+npm run dev
